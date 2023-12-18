@@ -25,19 +25,25 @@ function one()
    two()
 }
 one()
+// Above Example you can see -You can access parent function variable through child function
+// But child function varible can't accesss by parent 
+
+
+
+
 
 // ****interesting *****
 
 // This concept called Hoisting here we declear function in different way
 console.log(addone(6))
-function addone(num)
+function addone(num) // pure function
 {
     return num+1;
 }
 
 
-addTwo()
-const addTwo=function(num)
+addTwo() //got an error
+const addTwo=function(num) //its called expression 
 {
     return num+2
 }
