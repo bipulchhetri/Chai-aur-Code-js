@@ -1,23 +1,34 @@
-// function outer()
+// // function outer()
+// // {
+// //     let name="Bipul"
+// //     function inner()
+// //     {
+// //         console.log(name)
+// //     }
+// //     inner()
+// // }
+// // outer() //Lexical Scoping
+
+// function first()
 // {
-//     let name="Bipul"
-//     function inner()
+//     let name="chhetri";
+//     function second()
 //     {
-//         console.log(name)
+// console.log(name)
 //     }
-//     inner()
+//     return second;
 // }
-// outer() //Lexical Scoping
 
-function first()
+// const print=first()
+// // print()
+
+
+function x()
 {
-    let name="chhetri";
-    function second()
-    {
-console.log(name)
+    let name="bipul";
+    function y(){
+        console.log(name)
     }
-    return second;
+    y()
 }
-
-const print=first()
-print()
+x()
